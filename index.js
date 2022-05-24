@@ -23,7 +23,7 @@ function getDeleteBtn(){
 
 
  function fetchPokemons (pokemon) {
-        let data = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon}`);
+        let data = await fetch(` https://pokeapi.co/api/v2/pokemon/ditto${pokemon}`);
         let foundPokemon = await data.json();
         console.log(foundPokemon);
         displayPokeDetail(foundPokemon);
@@ -41,7 +41,7 @@ function fetchKantoPokemon(){
 
 function fetchPokemonData(pokemon){
     let url = pokemon.url // <--- this is saving the pokemon url to a variable to use in the fetch. 
-                                //Example: https://pokeapi.co/api/v2/pokemon/1/"
+                                //Example: : https://pokeapi.co/api/v2/pokemon/ditto"
     fetch(url)
     .then(response => response.json())
     .then(function(pokeData){

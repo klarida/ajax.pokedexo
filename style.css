@@ -6,6 +6,13 @@ body { text-align: center;
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; /* Resize the background image to cover the entire container */
 }
+.searchBtn {
+    background-color: #CDB4DB;
+    margin: 10px;
+    border-width: 2px;
+    border-color: #6D4186;
+    color: #6D4186}
+
 .container {
     margin: auto;
 }
