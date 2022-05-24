@@ -1,15 +1,18 @@
-.body{
-    height: 100%;
-    width: 100%;
+body { text-align: center;
+    background-image: url("pikachy.jpg"); /* The image used */
+    background-color: black; /* Used if the image is unavailable */
+    height: 100px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
 }
-
 .container {
     margin: auto;
 }
 
 .poke-container {
     margin: auto;
-    width: 90%;
+    width: 90px;
     padding: 10px;
 }
 
@@ -24,9 +27,10 @@
     margin: 0 auto;
 }
 
-.delete-btn {
-    position: absolute;
-    left: 85%;
-    display: none;
-    margin-bottom: 5%;
+.searchBtn {
+    background-color: #CDB4DB;
+    margin: 10px;
+    border-width: 2px;
+    border-color: #6D4186;
+    color: #6D4186;
 }

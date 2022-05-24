@@ -21,8 +21,16 @@ function getDeleteBtn(){
 }
 
 
+
+ function fetchPokemons (pokemon) {
+        let data = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon}`);
+        let foundPokemon = await data.json();
+        console.log(foundPokemon);
+        displayPokeDetail(foundPokemon);
+    }
+
 function fetchKantoPokemon(){
-    fetch('https://pokeapi.co/api/v2/pokemon?limit=151%2')
+    fetch('https://pokeapi.co/api/v2/pokemon/?limit=20')
     .then(response => response.json())
     .then(function(allpokemon){
         allpokemon.results.forEach(function(pokemon){
@@ -95,4 +103,13 @@ function deleteEverything(event){
     generateBtn.addEventListener('click', renderEverything);
 
     allPokemonContainer.append(generateBtn)
+}
+
+
+//Functionality
+async function getPokemon(identifier) {
+  const data = await fetch(`https://pokeapi.co/api/v2/pokemon/${identifier}`);
+  const response = await data.json();
+
+  pokedex.createPokemon(response);
 }
