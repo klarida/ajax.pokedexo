@@ -41,3 +41,9 @@ body { text-align: center;
     border-color: #6D4186;
     color: #6D4186;
 }
+.pics { 
+    position: absolute;
+    right: 400px;
+    bottom: 120px;
+
+}
