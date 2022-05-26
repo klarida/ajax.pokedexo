@@ -1,18 +1,16 @@
 body { text-align: center;
-    background-image: url("pikachy.jpg"); /* The image used */
+    background-image: url("1761.png"); /* The image used */
     background-color: black; /* Used if the image is unavailable */
-    height: 100px; /* You must set a specified height */
+    height: 500px; /* You must set a specified height */
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; /* Resize the background image to cover the entire container */
 }
 .searchBtn {
-    background-color: #CDB4DB;
+    background-color: #45c015;
     margin: 10px;
     border-width: 2px;
-    border-color: #6D4186;
-    color: #6D4186}
-
+}
 .container {
     margin: auto;
 }
@@ -35,15 +33,13 @@ body { text-align: center;
 }
 
 .searchBtn {
-    background-color: #CDB4DB;
+    background-color: #5fb618;
     margin: 10px;
     border-width: 2px;
-    border-color: #6D4186;
-    color: #6D4186;
 }
 .pics { 
     position: absolute;
-    right: 400px;
+    right: 100px;
     bottom: 120px;
 
 }
